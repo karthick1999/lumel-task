@@ -120,7 +120,6 @@ function App() {
                       return child;
                   });
   
-                  // Calculate new parent value by summing updated children
                   const newParentValue = updatedChildren.reduce((sum, child) => sum + child.value, 0);
                   const parentVariance = ((newParentValue - item.value) / item.value * 100).toFixed(2);
   
